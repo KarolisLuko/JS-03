@@ -5,5 +5,11 @@ function onClick() {
 
     let rez = document.getElementById(`Rezultatas`);
 
-     rez.innerHTML = (Math.pow(skaiciai));
+    const sveikas_skaicius = parseInt(skaiciai);
+
+    if(isNaN(sveikas_skaicius ) || sveikas_skaicius === ''){
+        rez.innerHTML = 'irasik skaiciu';
+    } else {
+        rez.innerHTML = (Math.pow(sveikas_skaicius, 2));
+    }
 }
