@@ -9,7 +9,7 @@ function onClick() {
     let rez = document.getElementById(`Rezultatas`);
 
 
-    var measuredTime = new Date(null);
+    const measuredTime = new Date(null);
     measuredTime.setSeconds(secunds);
 
     rez.innerHTML = measuredTime.toISOString().substr(11, 8);
